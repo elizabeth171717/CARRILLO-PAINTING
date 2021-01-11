@@ -3,49 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-    <title>CARRILLO PAINTING</title>
     <link rel="stylesheet" href="style.css">
+
+    <title>CARRILLO PAINTING</title>
+
 </head>
 <body>
+    <div class="jumbo">
 
-    <header>
-        <a href="#" class="logo"><i class="fas fa-paint-roller"></i></a>
-        <div class="menuToggle" onclick="toggleMenu();"></div>
-        <ul class="navigation">
-           <li><a href="#banner" class="active" onclick="toggleMenu();">Home</a></li>
-           <li><a href="#about" onclick="toggleMenu();">About</a></li>
-           <li><a href="#menu" onclick="toggleMenu();">Work</a></li>
-           <li><a href="#services"onclick="toggleMenu();" >Services</a></li>
-           <!-- <li><a href="#testimonials" onclick="toggleMenu();">Testimonials</a></li>  -->
-           <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
-        </ul>
-        <label id="icon">
-            <i class="fas fa-bars"></i>
-        </label>
-    </header>
+        <!--header starts-->
+        <header>
+            <a href="#" class="logo"><i class="fas fa-paint-roller"></i></a>
+            <div class="menuToggle" onclick="toggleMenu();">
+                <label id="icon">
+                    <i class="fas fa-bars"></i>
+                </label>
+            </div>
+            <ul>
+               <li><a href="#banner" class="active" onclick="toggleMenu();">HOME</a></li>
+               <li><a href="#about" onclick="toggleMenu();">ABOUT</a></li>
+               <li><a href="#gallery" onclick="toggleMenu();">GALLERY</a></li>
+               <li><a href="#services"onclick="toggleMenu();" >SERVICES</a></li>
+               
+               <li><a href="#contact" onclick="toggleMenu();">CONTACT</a></li>
+            </ul>
+            
+        </header>
+         <!--header ends-->
 
-    <!--banner section--> 
+
+        <!--banner section starts--> 
     <section class="banner" id="banner">
-      <div class="content">
-
-          <a href="tel:404-680-7241">404-680-7241</a>
-          <h2>CARRILLO PAINTING</h2>
-          <p>We do Interior/Exterior Home Repair</p>
+        <div class="content">
+  
+            
+            <h2>CARRILLO PAINTING</h2>
+            <p><a href="tel:404-680-7241">404-680-7241</a></p>
+            <p>We do Interior/Exterior Home Repair</p>
             <a href="tel:404-680-7241" class="btn">FREE ESTIMATE</a>
-      </div>
-    </section>
+        </div>
+      </section>
+    <!--banner section ends--> 
+
+
+    <!--about section starts--> 
 
     <section class="about" id="about">
-        <div class="row">
-            <div class="col50">
+            <div class="row">
+            <div class="first">
                 <h2 class="tittleText"><span>A</span>BOUT US</h2>
 
                 <p>CARRILLO PAINTING A FAMILY OWNED COMPANY,
                      offers you the best service in Town.
                      PLEASE CALL NATIVIDAD CARRILLO
                      IF YOU HAVE ANY QUESTION about the services we offer.
-                     <strong>404-680-7241</strong> </p>
+                     <br/> <strong>404-680-7241</strong> </p>
                     <br/>
                      <p>
                     We can help you with all of your home painting needs whether you
@@ -59,83 +73,93 @@
                     </p>
                        
             </div>
-            <div class="col50">
+            <div class="second">
                <div class="imgBx">
-                   <img src="images/6.jpg" width="300px" height="300px">
+                   <img src="images/15.jpg" width="300px" height="300px">
                </div>
             </div>
         </div>
     </section>
+    <!--about section ends--> 
 
-    <section  class="menu" id="menu">
-       <div class="tittle">
-           <h2 class="tittleText">Our <span>W</span>ork </h2>
-           <p>Here is some of our painting work, Interior,
-                Exterior, Wood...</p>
-       </div>
-       <div class="content">
-           <div class="box">
-               <div class="imgBx">
-                   <img src="images/5.jpg" width="150px" height="150px">
-               </div>
-               <div class="text">
-                   <h3></h3>
-               </div>
-           </div>
 
-           <div class="box">
-            <div class="imgBx">
-                <img src="images/7.jpg" width="150px" height="150px">
-            </div>
-            <div class="text">
-                <h3></h3>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="imgBx">
-                <img src="images/9.jpg" width="150px" height="150px">
-            </div>
-            <div class="text">
-                <h3></h3>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="imgBx">
-                <img src="images/18.jpg" width="150px" height="150px">
-            </div>
-            <div class="text">
-                <h3></h3>
-            </div>
-        </div>
-
-        <div class="box">
-         <div class="imgBx">
-             <img src="images/12.jpg" width="150px" height="150px">
-         </div>
-         <div class="text">
-             <h3></h3>
-         </div>
-     </div>
-
-     <div class="box">
-         <div class="imgBx">
-             <img src="images/11.jpg" width="150px" height="150px">
-         </div>
-         <div class="text">
-             <h3></h3>
-         </div>
-     </div>
-
+    <!--...........GALLERY SECTION STARTS....................-->
      
-       </div>
-    </section>
-
-    <section class="services" id="services">
+    <section  class="gallery" id="gallery">
         <div class="tittle">
-            <h2 class="tittleText">More <span>S</span>ervies</h2>
-            <p>Contact us for more than just painting details around the house...</p>
+            <h2 class="tittleText">Our <span>W</span>ork </h2>
+            <p>Here is some of our painting work, Interior,
+                 Exterior, Wood...</p>
+        </div>
+        <div class="content">
+            <div class="box">
+                <div class="imgBx">
+                    <img src="images/5.jpg" width="150px" height="150px">
+                </div>
+                <div class="text">
+                    <h3>SINGLE ROOM</h3>
+                </div>
+            </div>
+ 
+            <div class="box">
+             <div class="imgBx">
+                 <img src="images/7.jpg" width="150px" height="150px">
+             </div>
+             <div class="text">
+                 <h3>HOME</h3>
+             </div>
+         </div>
+ 
+         <div class="box">
+             <div class="imgBx">
+                 <img src="images/9.jpg" width="150px" height="150px">
+             </div>
+             <div class="text">
+                 <h3>EXTERIOR</h3>
+             </div>
+         </div>
+ 
+         <div class="box">
+             <div class="imgBx">
+                 <img src="images/18.jpg" width="150px" height="150px">
+             </div>
+             <div class="text">
+                 <h3>FURNITURE</h3>
+             </div>
+         </div>
+ 
+         <div class="box">
+          <div class="imgBx">
+              <img src="images/12.jpg" width="150px" height="150px">
+          </div>
+          <div class="text">
+              <h3>INTERIOR</h3>
+          </div>
+      </div>
+ 
+      <div class="box">
+          <div class="imgBx">
+              <img src="images/11.jpg" width="150px" height="150px">
+          </div>
+          <div class="text">
+              <h3>WOOD</h3>
+          </div>
+      </div>
+ 
+      
+        </div>
+     </section>
+ 
+
+
+    <!--...........GALLERY SECTION ENDS....................-->
+    
+     <!--.........SERVICES SECTION STARTS........-->
+
+     <section class="services" id="services">
+        <div class="tittle">
+            <h2 class="tittleText">More <span>S</span>ervices</h2>
+            <h3>Contact us for more than just painting details around the house...</h3>
         </div>
         <div class="content">
             <div class="box">
@@ -177,16 +201,18 @@
 
 
         </div>
-    </section>
+  
 
 
-    <section class="testimonials" id="testimonials">
-        <div class="tittle white">
-            <h2 class="tittleText">We will arrive on time, keep you informed,
-                 deliver what we promise and guarantee our work. </h2>
-            
-        </div>
-        <div class="content">
+    
+        
+        <div class="content2">
+            <div class="tittle white">
+                <h2>We will arrive on time, keep you informed,
+                     deliver what we promise and guarantee our work. </h2>
+                
+            </div>
+
             <div class="box">
                 <div class="imgBx">
                     <img src="images/4.jpg" width="400px" height="400px">
@@ -243,8 +269,13 @@
     </section>
 
 
+     <!--............SERVICES SECTION ENDS..................................-->
 
-    <section class="contact" id="contact">
+
+     <!--CONTACT SECTION STARTS-->
+
+
+     <section class="contact" id="contact">
         <div class="intro">
             <h2 class="tittleText"><span>C</span>ontact Us </h2>
             <p>Call us today to get a free ESTIMATE and
@@ -260,39 +291,32 @@
         </div>
        
          <div class="social-links">
-        
+         <div class="link-cont">
         <a href="https://www.facebook.com/Carrillo-Painting-105264761511490"><i class="fab fa-facebook-f"></i></a>
         <a href="#"><i class="fab fa-youtube"></i></a>
         <a href="mailto:Josecarrillochegue@gmail.com"><i class="fas fa-envelope-square"></i></a>
         <a href="tel:404-680-7241"><i class="fas fa-phone"></i></a>
-        
+    </div>
         </div>
         </section>
 
-        <div class="copyRightText">
-           <p>Copyright 2020 <a href="#">777etr</a>. All rights Reserved</p> 
-        </div>
+       
 
+     <!--CONTACT SECTION ENDS-->
+     
+
+     <!--COPYRIGHTS-->
+     <div class="copyRightText">
+        <p>Copyright 2020 <a href="#">777etr</a>. All rights Reserved</p> 
+     </div>
+
+    </div>
 
     <script type="text/javascript">
       window.addEventListener('scroll', function(){
         const header = document.querySelector('header');
         header.classList.toggle("sticky", window.scrollY > 0);
       });
-
-
-      function toggleMenu(){
-        const menuToggle = document.querySelector('.menuToggle');
-        const navigation = document.querySelector('.navigation');
-        menuToggle.classList.toggle('active');
-        navigation.classList.toggle('active');
-    }
-
-    $(document).ready(function() {
-          $('#icon').click(function() {
-            $('ul').toggleClass('show');
-          });
-        });
     </script>
 </body>
 </html>
