@@ -4,12 +4,127 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     scroll-behavior: smooth;
+
+}
+
+section {
+    padding: 100px;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+.tittle {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tittleText {
+    color:#111;
+    font-size: 2em;
+    font-weight: 300;
 }
 
 
 
+span {
+    color: red;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+/*...................HEADER STARTS...............*/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 50px;
+    z-index:10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+   background-color:  rgba(0, 0, 0, 0.5);
+  }
 
 
+  header.sticky  {
+    background:  rgb(10, 1, 1);
+    padding: 10px 50px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    color:#fff;
+    
+  }
+
+
+  header .logo {
+    color: white;
+    font-weight: 900;
+    font-size: 50px;
+    text-decoration: none;
+    text-shadow: 2px 2px black;
+}
+
+header.sticky .logo {
+    color: #fff;
+}
+
+
+
+header.sticky .logo span {
+    color:#fff;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+}
+
+header ul li {
+    list-style: none;
+    margin-left: 30px;
+    }
+    
+    header ul li a {
+        text-decoration: none;
+        font-weight: 1000;
+        color:white;
+        border-radius: 5px;
+        padding: 5px;
+        font-size: 1em;
+    }
+    
+    header.sticky ul li a {
+        color: #fff;
+    }
+    
+    header ul li a:hover {
+        border: 1px solid white;
+       transition: 5s; 
+    }
+    
+    header #icon {
+        color: white;
+        font-size: 30px;
+        line-height: 80px;
+        float: right;
+        margin-right: 40px;
+        cursor: pointer;
+        display: none;
+    }
+
+
+/*...................HEADER ENDS...............*/
+
+
+/*............... BANNER STARTS.................*/
 .banner {
     position: relative;
     width: 100%;
@@ -21,203 +136,143 @@
     background-size: cover;
 }
 
+
 .banner .content {
     max-width: 90%;
     text-align: center;
 }
 
+
 .banner .content h2 {
    
     font-size: 5em;
-    text-shadow: 2px 2px rgb(131, 4, 4);
+    text-shadow: 2px 2px rgb(247, 243, 243);
 }
-
-
-.banner .content h2 a{
-   text-decoration: none;
-   color: black;
-    }
-
 
 
 .banner .content p {
-  font-size: 3em;
-  color: #bbb3b3 ;
-  font-weight: 600;
-  text-shadow: 2px 2px rgb(131, 4, 4);
-}
+    font-size: 3em;
+    color: #bbb3b3 ;
+    font-weight: 600;
+    text-shadow: 2px 2px rgb(131, 4, 4);
+  }
+
+  .banner .content p a {
+    
+    color: #bbb3b3 ;
+   
+  }
 
 .btn {
- font-size: 1em;
- color: #fff;
- background-color: red;
- display: inline-block;
- padding: 10px 30px;
- margin-top: 20px;
- text-transform: uppercase;
- text-decoration: none;
- letter-spacing: 2px;
- transition: 0.5s;
-}
-
-.btn:hover {
-    letter-spacing: 6px;
-}
-
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 40px 100px;
-  z-index:10000;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  transition: 0.5s;
-}
-
-header.sticky  {
-  background: rgb(10, 1, 1);
-  padding: 10px 100px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.5);
-  color:#fff;
-}
-
-header .logo {
-    color: white;
-    font-weight: 900;
-    font-size: 40px;
-    text-decoration: none;
-    text-shadow: 2px 2px #FF0000;
-}
-
-header.sticky .logo {
-    color: #fff;
-}
-
-header .logo span {
-    color:#690728;
-}
-
-header.sticky .logo span {
-    color:#fff;
-}
-
-header .navigation {
-    position: relative;
-    display: flex;
-}
-
-
-
-header .navigation li {
-list-style: none;
-margin-left: 30px;
-}
-
-header .navigation li a {
-    text-decoration: none;
-    text-shadow: 2px 2px red;
-    font-weight: 1000;
-    border-bottom: 5px solid black;
-    border-left: 5px solid black;
-    color:black;
-    border-radius: 5px;
-    padding: 5px;
     font-size: 1em;
-}
-
-header.sticky .navigation li a {
     color: #fff;
-}
+    background-color: red;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+   }
+   
+   .btn:hover {
+       letter-spacing: 6px;
+   }
+/*............... BANNER ENDS.................*/
 
-header .navigation li a:hover {
-    color: #6bf70e;
-}
 
 
-/*...........about sectio..........*/
-section {
-    padding: 100px;
-}
+/* ...........ABOUT SECTION STARTS........................*/
 
-.row {
-    position: relative;
+.about {
+    
     width: 100%;
+    
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    
 }
 
-.row .col50 {
-    position: relative;
-    width: 48%;
+.about .row {
+    margin: 100px;
+    max-width: 90%;
+    display: flex;
+    flex-direction: row;
 }
 
-.tittleText {
-    color:#111;
-    font-size: 2em;
-    font-weight: 300;
+
+.row .first {
+flex: 1;
+
+
 }
 
-.tittleText span {
-    color: #ff0157;
-    font-weight: 700;
-    font-size: 1.5em;
+
+.row .first h2, p{
+  margin-right: 50px;
+    
+    }
+
+
+    .row .first h2 {
+        margin-bottom: 30px;
+    }
+
+.row .second  {
+    flex: 1;
+   
 }
 
-.row .col50 .imgBx {
+
+.row .second  .imgBx {
     position: relative;
     width: 100%;
+    flex: 1;
+   
     /*min-height: 300px;*/
     height: 100%;
 }
 
-.row .col50 .imgBx  img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.row .second  .imgBx img {
+    
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
 }
 
+/* ...........ABOUT SECTION ENDS......*/
 
-/*...........end about sectio..........*/
 
-
-/*.....................menu section.............*/
-
-.tittle {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.menu .content {
+/* ...........GALLERY SECTION STARTS......*/
+ 
+.gallery .content {
     display: flex;
     justify-content: center;
     flex-direction: row-reverse;
     flex-wrap: wrap;
     margin-top: 40px;
+    background-color:  rgba(0,0,0,0.05);
 }
 
-.menu .content .box {
+.gallery .content .box {
   width: 340px;
   margin: 20px;
-  border: 15px solid #111;
+  border: 15px solid #fff;
   box-shadow: 0 5px 35px rgba(0,0,0,0.08);
 }
 
-.menu .content .box .imgBx {
+.gallery .content .box .imgBx {
     position: relative;
     width: 100%;
     height: 300px;
-}
 
-.menu .content .box .imgBx img {
+}
+.gallery .content .box .imgBx img {
     position: absolute;
     top: 0;
     left: 0;
@@ -226,20 +281,34 @@ section {
     object-fit: cover;
 }
 
-.menu .col50 .box .text {
+.gallery  .box .text {
     padding: 15px 0 5px;
+    background-color: white;
 }
 
 
-.menu .col50 .box .text h3{
+.gallery  .box .text h3{
     font-weight: 400;
     color: #111;
+   
 }
 
-/*.....................end menu section.............*/
 
-/*................. expert section....................*/
-.expert .content {
+
+
+/* ...........GALLERY SECTION ENDS......*/
+
+
+/* ...........SERVICES SECTION ENDS......*/
+.services {
+    width: 100%;
+    background-color: brown;
+    
+}
+
+
+.services .content {
+   
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -247,19 +316,18 @@ section {
     margin-top: 40px;
 }
 
-
-.expert .content .box {
+.services .content .box {
     width: 250px;
     margin: 15px;
 }
 
-.expert .content .box .imgBx {
+.services .content .box .imgBx {
     position: relative;
     width: 100%;
     height: 300px;
 }
 
-.expert .content .box .imgBx  img {
+.services .content .box .imgBx  img {
     position: absolute;
     top: 0;
     left: 0;
@@ -268,29 +336,31 @@ section {
     object-fit: cover;
 }
 
-.expert .content .box .imgBx .text {
+.services .content .box .text {
     padding: 15px 0 5px;
 }
 
-.expert .content .box .imgBx .text h3{
+.services .content .box.text h3{
     font-weight: 400;
     color: #111;
 }
 
-
-/*................. end expert section....................*/
-
-/*................. testimonials section....................*/
-.testimonials {
-    background: url(2.jpg);
-    background-size: cover;
+.services .content2 {
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+    
 
 }
 
 
 
 
-.testimonials .content {
+.services .content2 .content {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -298,7 +368,7 @@ section {
   margin-top: 40px;
 }
 
-.testimonials .content .box {
+.services .content2 .box {
     width: 340px;
     margin: 20px;
     padding: 40px;
@@ -310,7 +380,7 @@ section {
 }
 
 
-.testimonials .content .box .imgBx {
+.services .content2 .box .imgBx {
     position: relative;
     width: 80px;
     height: 80px;
@@ -319,7 +389,7 @@ section {
     overflow: hidden;
 }
 
-.testimonials .content .box .imgBx  img {
+.services .content2 .box .imgBx  img {
     position: absolute;
     top: 0;
     left: 0;
@@ -328,86 +398,90 @@ section {
     object-fit: cover;
 }
 
-.testimonials .content .box .text {
+.services .content2 .box .text {
 text-align: center;
 }
 
 
-.testimonials .content .box .text p {
+.services .content2 .box .text p {
     color: #666;
     font-style: italic;
 }
 
-.testimonials .content .box .text h3 {
+.services .content2 .box .text h3 {
     margin-top: 20px;
-    color: #ff0157;
+    color: red;
     font-size: 1em;
     font-weight: 600;
 }
 
 
 
-/*.................end testimonials section....................*/
+/* ...........SERVICES SECTION ENDS......*/
 
 
-/*.................contact section....................*/
+
+/*.........CONTACT SECTION STARTS...........*/
+
 .contact {
-    background: url(4.jpg);
-    background-size: cover;
-
-}
-
-.contactForm {
-    padding: 75px 50px;
-    background: #111;
-    box-shadow: 0 15px 50px rgba(0,0,0,0.1);
-    max-width: 500px;
-    margin-top: 50px;
-}
-
-.contactForm h3 {
-    color: #fff;
-    font-size: 1.2em;
-    margin-bottom: 20px;
-    font-weight: 500;
-}
-
-.contactForm .inputBox {
-    position: relative;
     width: 100%;
-    margin-bottom: 20px;
+    
+    
+    display: flex;
+}
+  
+.contact .intro {
+    flex: 1;
 }
 
-
-.contactForm .inputBox input,
-.contactForm .inputBox textarea {
-    width: 100%;
-    border: 1px solid #555;
-    padding: 10px;
-    color: #111;
-    outline: none;
-    font-size: 16px;
-    font-weight: 300;
-    resize: none;
-}
-
-.contactForm .inputBox input[type="submit"] {
-    font-size: 1em;
-    background:#ff0157;
-    color: #fff;
-    display: inline-block;
-    text-transform: uppercase;
+.contact .intro a {
+   
     text-decoration: none;
-    letter-spacing: 2px;
-    transition: 0.5s;
-    max-width: 100px;
-    font-weight: 500;
-    border:none;
-    cursor: pointer;
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.contact .intro a:hover {
+    color: red;
+}
+
+.contact .social-links {
+  
+    flex: 1;
+   
+    display: flex;
+    justify-content: space-around;
+   
 }
 
 
-/*.................end contact section....................*/
+
+.contact .social-links .link-cont {
+    width: 100%;
+    border:5px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+}
+
+
+.contact .social-links  a  {
+    color: black;
+    font-size: 100px;
+   
+}
+  
+
+.contact .social-links  a:hover  {
+    color: red;
+}
+   
+
+
+/*...........CONTACT SECTION ENDS.........*/
+
 
 /*............COPYRIGHT...................................*/
 
@@ -427,130 +501,178 @@ text-align: center;
     text-decoration: none;
 }
 
-/*............  end COPYRIGHT...................................*/
 
-@media (max-width: 991px) {
 
-    header,
-    header.sticky {
-        padding: 10px 20px;
-    }
+/*....................@media...................*/
 
-    header .navigation {
-        display: none;
-    }
 
-    header .navigation.active {
-       width: 100%;
-       height: calc(100% - 68px);
-       position: fixed;
-       top: 68px;
-       left: 0;
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       flex-direction: column;
-       background: #fff;
-    }
-
-    header .navigation li {
-        margin-left: 0;
-    }
-
-    header .navigation li a {
-        
-        color: #111;
-        font-size: 1.6em;
+@media (max-width: 1120px) {
+    header .logo {
+       
+        font-size: 30px;
         
     }
 
-    .menuToggle {
-        position: relative;
-        width: 40px;
-        height: 40px;
-        background: url(soccer.png);
-        background-size: 30px;
-        background-repeat: no-repeat;
-        background-position: center;
-        cursor: pointer;
+    header ul li a {
+        
+        font-size: 0.8em;
     }
 
-    .menuToggle.active {
-       background: url(5.jpg);
-       background-size: 25px;
-       background-repeat: no-repeat;
-       background-position:center;
-    }
-
-    header.sticky .menuToggle {
-        filter: invert(1);
-    }
-
-    section {
-        padding: 20px;
-    }
+    /*banner*/
 
     .banner .content h2 {
-        font-size: 3em;
-        color: fff;
+   
+        font-size: 4em;
+      
     }
+    
+    
+    .banner .content p {
+        font-size: 2.5em;
+              }
+    
+    .btn {
+                font-size: .7em;
+     }
+               
+    /*banner*/
 
-    .row {
+    /*about*/
+    .about {
+    
+        width: 100%;
+           
+    }
+    
+    .about .row {
+        margin: 0px;
+        max-width: 100%;
+      
         flex-direction: column;
     }
+    
+    
+    .row .first {
+   width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+    }
+    
+    
+    .row .first h2, p{
+      margin-right: 50px;
+        
+        }
+    
+    
+        .row .first h2 {
+            margin-bottom: 30px;
+        }
+    
+    .row .second  {
+       width: 100%;
+       
+    }
+    
+    
+    .row .second  .imgBx {
+        
+       
+        min-height: 300px;
+       
+    }
+    
+   
 
-    .row .col50 {
-        position: relative;
+    /*about ends*/
+
+    /*services*/
+    .services .content2 {
         width: 100%;
+        }
+    
+    .services .content2 .content {
+      
+      margin-top: 40px;
     }
-
-    .row .col50 .imgBx {
-        height: 300px;
-        margin-top: 20px;
-    }
-
-    .menu .content {
-        margin-top: 20px;
-    }
-
-    .menu .content .box{
-        margin: 10px;
-        
-    }
-
-    .menu .content .box .imgBx{
-        height: 260px;
-        
-    }
-
-    .tittle {
-        text-align: center;
-    }
-
-    .tittleText {
-       font-size: 1.8em;
-       line-height: 1.5em; 
-       margin-bottom: 15px;
-       font-weight: 300;
-    }
-
-    .testimonials .content .box {
+    
+    .services .content2 .box {
+        width: 250px;
         margin: 10px;
         padding: 20px;
+            }
+    
+    
+    .services .content2 .box .imgBx {
+        position: relative;
+        width: 80px;
+        height: 80px;
+        margin-bottom: 15px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    
+    .services .content2 .box .imgBx  img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .services .content2 .box .text {
+    text-align: center;
+    }
+    
+    
+    .services .content2 .box .text p {
+        color: #666;
+        font-style: italic;
+    }
+    
+    .services .content2 .box .text h3 {
+        margin-top: 20px;
+        color: red;
+        font-size: 1em;
+        font-weight: 600;
+    }
+    
+
+    /*sevices ends*/
+
+
+
+    /*contact*/
+    .contact {
+        width: 100%;
+        
+        
+      
     }
 
-   .contactForm {
-padding: 35px 40px;
-margin-top: 20px;
-margin-bottom: 30px;
-   }
-
+    .about .row {
+    width: 100%;
+      flex-direction: row;
+    }
+      
+    .contact .intro {
+       width: 100%;
+    }
+    
+   
+    
+    .contact .social-links {
+      width: 100%; 
+    }
+    
+    
+    
+        /*contact ends*/
+     
 }
 
-
-@media (max-width: 480px) {
-    .banner .content h2 {
-        font-size: 2.2em;
-        color: #fff;
-    }
+@media (max-width: 858px) {
+   
+     
 }
