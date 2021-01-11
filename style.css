@@ -426,7 +426,7 @@ text-align: center;
 .contact {
     width: 100%;
     
-    
+    flex-direction: row;
     display: flex;
 }
   
@@ -644,35 +644,26 @@ text-align: center;
 
 
     /*contact*/
-    .contact {
-        width: 100%;
-        
-        
-      
-    }
-
-    .about .row {
+   .contact {
     width: 100%;
-      flex-direction: row;
-    }
-      
-    .contact .intro {
-       width: 100%;
-    }
     
-   
+    flex-direction: column;
     
-    .contact .social-links {
-      width: 100%; 
-    }
-    
-    
+}
+  
+.contact .intro {
+   width: 100%;
+}
+
+
+
+.contact .social-links {
+   width: 100%;
+  
+}
     
         /*contact ends*/
      
 }
 
-@media (max-width: 858px) {
-   
-     
-}
+
