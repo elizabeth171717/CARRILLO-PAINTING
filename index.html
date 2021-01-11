@@ -10,20 +10,27 @@
 <body>
 
     <header>
-        <a href="#" class="logo">CARRILLO PAINTING</a>
+        <a href="#" class="logo"><i class="fas fa-paint-roller"></i></a>
         <div class="menuToggle" onclick="toggleMenu();"></div>
         <ul class="navigation">
-           <li><a href="#banner" onclick="toggleMenu();">Home</a></li>
+           <li><a href="#banner" class="active" onclick="toggleMenu();">Home</a></li>
            <li><a href="#about" onclick="toggleMenu();">About</a></li>
            <li><a href="#menu" onclick="toggleMenu();">Work</a></li>
-           <li><a href="#expert"onclick="toggleMenu();" >Expert</a></li>
-           <li><a href="#testimonials" onclick="toggleMenu();">Testimonials</a></li>
+           <li><a href="#services"onclick="toggleMenu();" >Services</a></li>
+           <!-- <li><a href="#testimonials" onclick="toggleMenu();">Testimonials</a></li>  -->
            <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
         </ul>
+        <label id="icon">
+            <i class="fas fa-bars"></i>
+        </label>
     </header>
+
+    <!--banner section--> 
     <section class="banner" id="banner">
       <div class="content">
-          <h2><a href="tel:404-680-7241">404-680-7241</a></h2>
+
+          <a href="tel:404-680-7241">404-680-7241</a>
+          <h2>CARRILLO PAINTING</h2>
           <p>We do Interior/Exterior Home Repair</p>
             <a href="tel:404-680-7241" class="btn">FREE ESTIMATE</a>
       </div>
@@ -37,8 +44,8 @@
                 <p>CARRILLO PAINTING A FAMILY OWNED COMPANY,
                      offers you the best service in Town.
                      PLEASE CALL NATIVIDAD CARRILLO
-                     IF YOU HAVE ANY QUESTION
-                     <strong>404-680-7241.</strong> </p>
+                     IF YOU HAVE ANY QUESTION about the services we offer.
+                     <strong>404-680-7241</strong> </p>
                     <br/>
                      <p>
                     We can help you with all of your home painting needs whether you
@@ -125,9 +132,9 @@
        </div>
     </section>
 
-    <section class="expert" id="expert">
+    <section class="services" id="services">
         <div class="tittle">
-            <h2 class="tittleText">More Home <span>R</span>epair Servies </h2>
+            <h2 class="tittleText">More <span>S</span>ervies</h2>
             <p>Contact us for more than just painting details around the house...</p>
         </div>
         <div class="content">
@@ -175,7 +182,7 @@
 
     <section class="testimonials" id="testimonials">
         <div class="tittle white">
-            <h2 class="tittleText">Our team will arrive on time, keep you informed,
+            <h2 class="tittleText">We will arrive on time, keep you informed,
                  deliver what we promise and guarantee our work. </h2>
             
         </div>
@@ -238,37 +245,32 @@
 
 
     <section class="contact" id="contact">
-        <div class="tittle">
+        <div class="intro">
             <h2 class="tittleText"><span>C</span>ontact Us </h2>
             <p>Call us today to get a free ESTIMATE and
                 to learn more about the areas we serve.
             </p>
-        </div>
-        <div class="contactForm">
-            <h3>Send Message</h3>
-            <div class="inputBox">
-                <input type="text" placeholder="Name">
-            </div>
-            <div class="inputBox">
-                <input type="text" placeholder="Email">
-            </div>
-            <div class="inputBox">
-                <textarea placeholder="Name"></textarea>
-            </div>
-            <div class="inputBox">
-                <input type="submit" value="Send">
-            </div>
-        </div>
+            <p>Like and follow us on Social Media</p>
+            <h3>Ready to make a change? call:</h3>
+            <p><span>NATIVIDAD CARRILLO</span></p>
 
-
-        <i class="fab fa-facebook-f"></i>
-        <i class="fab fa-youtube"></i>
-        <i class="fas fa-envelope-square"></i>
-        <i class="fas fa-phone"></i>
+            <p><a href="tel:404-680-7241">404-680-7241</a></p>
+            <p><a href="tel:404-536-8869">404-536-8868</a></p>
+            <p><a href="mailto:Josecarrillochegue@gmail.com">Josecarrillochegue@gmail.com</a></p>
+        </div>
+       
+         <div class="social-links">
+        
+        <a href="https://www.facebook.com/Carrillo-Painting-105264761511490"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="mailto:Josecarrillochegue@gmail.com"><i class="fas fa-envelope-square"></i></a>
+        <a href="tel:404-680-7241"><i class="fas fa-phone"></i></a>
+        
+        </div>
         </section>
 
         <div class="copyRightText">
-           <p>Copyright 2020 <a href="#">Online Tutorials</a>. All rigt Reserved</p> 
+           <p>Copyright 2020 <a href="#">777etr</a>. All rights Reserved</p> 
         </div>
 
 
@@ -285,6 +287,12 @@
         menuToggle.classList.toggle('active');
         navigation.classList.toggle('active');
     }
+
+    $(document).ready(function() {
+          $('#icon').click(function() {
+            $('ul').toggleClass('show');
+          });
+        });
     </script>
 </body>
 </html>
