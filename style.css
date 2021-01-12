@@ -691,7 +691,7 @@ margin-top: 50px;
 
 
 @media (max-width: 480px) {
-      .banner.content h2 {
+      .banner .content h2 {
           font-size: 2.2em;
       }
 }
