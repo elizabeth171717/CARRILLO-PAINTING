@@ -82,17 +82,17 @@ header.sticky .logo span {
     color:#fff;
 }
 
-header ul {
+header .navigation {
     position: relative;
     display: flex;
 }
 
-header ul li {
+header .navigation li {
     list-style: none;
     margin-left: 30px;
     }
     
-    header ul li a {
+    header .navigation li a {
         text-decoration: none;
         font-weight: 1000;
         color:white;
@@ -101,16 +101,16 @@ header ul li {
         font-size: 1em;
     }
     
-    header.sticky ul li a {
+    header.sticky .navigation li a {
         color: #fff;
     }
     
-    header ul li a:hover {
+    header .navigation li a:hover {
         border: 1px solid white;
        transition: 5s; 
     }
     
-    header #icon {
+    #icon {
         color: white;
         font-size: 30px;
         line-height: 80px;
@@ -533,7 +533,7 @@ text-align: center;
         
     }
 
-    header ul li a {
+    header .navigation li a {
         
         font-size: 0.8em;
     }
@@ -690,8 +690,217 @@ margin-top: 50px;
 }
 
 
+
+@media (max-width: 991px) {
+    section {
+        padding: 20px;
+    }
+
+   header 
+   header.sticky {
+  padding: 10px 20px;
+   }
+
+   header .navigation {
+       display: none;
+   }
+
+   #icon {
+       display: block;
+   }
+
+   header .navigation {
+      width: 100%;
+      height: calc(100% - 68px);
+      position: fixed;
+      top: 68px;
+      left:0;
+      display: none;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color: black;
+   }
+
+   header .navigation li {
+       margin-left: 0;
+       padding: 10px;
+   }
+
+   header .navigation li a {
+    font-size: 1.6em;
+   
+}
+
+header .navigation li a:hover {
+    color: red;
+    border: none;
+    transition: none; 
+}
+
+
+/*banner*/
+
+
+           
+/*banner*/
+
+
+  }
+
 @media (max-width: 480px) {
-      .banner .content h2 {
-          font-size: 2.2em;
-      }
+    
+      section {
+        padding: 20px;
+    }
+    
+    
+
+    
+    /*header*/
+    header .logo {
+       
+        font-size: 30px;
+        
+    }
+
+   
+
+    /*header*/
+
+    /*banner*/
+
+    .banner .content h2 {
+   
+        font-size: 2.2em;
+      
+    }
+    
+    
+    .banner .content p {
+        font-size: 1.5em;
+              }
+    
+    .btn {
+                font-size: .5em;
+     }
+               
+    /*banner*/
+
+    /*about*/
+    .about {
+    
+        width: 100%;
+           
+    }
+    
+    .about .row {
+        margin: 0px;
+        max-width: 100%;
+      
+        flex-direction: column;
+    }
+    
+    
+    .row .first {
+   width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+    }
+    
+    
+    
+    .row .second  {
+       width: 100%;
+       
+    }
+    
+    
+   
+    
+   
+
+    /*about ends*/
+
+
+    /*gallery*/
+    .gallery .content {
+        
+        margin-top: 30px;
+       
+    }
+
+
+   
+
+    /*gallery*/
+
+    /*services*/
+    
+    
+    
+
+    .services {
+        width: 100%;
+      
+    }
+
+        
+   
+    /*sevices ends*/
+
+
+
+    /*contact*/
+   .contact {
+    width: 100%;
+    text-align: center;
+  
+    
+}
+  
+.contact .intro {
+   width: 100%;
+
+}
+
+
+
+.contact .social-links {
+   width: 100%;
+    margin-top: 50px;
+}
+    
+
+.contact .intro a {
+   
+   
+    font-size:16px;
+}
+
+
+
+
+
+
+.contact .social-links .link-cont {
+    width: 100%;
+    }
+
+
+.contact .social-links  a  {
+   
+    font-size: 50px;
+   
+}
+  
+
+
+
+/*...........CONTACT SECTION ENDS.........*/
+
+
+        /*contact ends*/
+
+
 }
