@@ -16,12 +16,11 @@
         <!--header starts-->
         <header>
             <a href="#" class="logo"><i class="fas fa-paint-roller"></i></a>
-            <div class="menuToggle" onclick="toggleMenu();">
-                <label id="icon">
-                    <i class="fas fa-bars"></i>
-                </label>
+            
+            <div class="menuToggle">
+               
             </div>
-            <ul>
+            <ul class="navigation">
                <li><a href="#banner" class="active" onclick="toggleMenu();">HOME</a></li>
                <li><a href="#about" onclick="toggleMenu();">ABOUT</a></li>
                <li><a href="#gallery" onclick="toggleMenu();">GALLERY</a></li>
@@ -30,6 +29,10 @@
                <li><a href="#contact" onclick="toggleMenu();">CONTACT</a></li>
             </ul>
             
+            <label id="icon"  onclick="toggleMenu();">
+                <i class="fas fa-bars"></i>
+            </label>
+
         </header>
          <!--header ends-->
 
@@ -317,6 +320,14 @@
         const header = document.querySelector('header');
         header.classList.toggle("sticky", window.scrollY > 0);
       });
+
+
+      function toggleMenu() {
+          const menuToggle = document.querySelector('.icon');
+          const navigation = document.querySelector('.navigation');
+          menuToggle.classList.toggle('active');
+          navigation.classList.toggle('active');
+  }
     </script>
 </body>
 </html>
