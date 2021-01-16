@@ -110,7 +110,7 @@ header .navigation li {
        transition: 5s; 
     }
     
-    #icon {
+    .toggle {
         color: white;
         font-size: 30px;
         line-height: 80px;
@@ -405,11 +405,11 @@ object-fit: cover;
 text-align: center;
 }
 
-
 .services .content2 .box .text p {
     color: #666;
     font-style: italic;
 }
+
 
 .services .content2 .box .text h3 {
     margin-top: 20px;
@@ -541,16 +541,19 @@ text-align: center;
     /*header*/
 
     /*banner*/
+    
+
 
     .banner .content h2 {
    
         font-size: 4em;
-      
+       
     }
     
     
     .banner .content p {
         font-size: 2.5em;
+      
               }
     
     .btn {
@@ -617,7 +620,9 @@ text-align: center;
     }
 
 
-   
+    .gallery  .box .text h3 {
+        text-align: center;
+    }
 
     /*gallery*/
 
@@ -638,6 +643,10 @@ text-align: center;
     .services .content .box .imgBx{
      height: 260px;
     }
+    
+    .services .content .box .text h3{
+        text-align: center;
+    }
 
     .services .content2 {
         width: 100%;
@@ -652,6 +661,15 @@ text-align: center;
         text-align: center;
     }
     
+    
+ 
+
+
+    .services .content2 .box .text p {
+       text-align: center;
+    }
+
+
     .services .content2 .box {
         
         margin: 15px;
@@ -705,17 +723,18 @@ margin-top: 50px;
        display: none;
    }
 
-   #icon {
-       display: block;
-   }
+   
+    .toggle {
+        display: block;
+    }
 
-   header .navigation {
+   header .navigation.active {
       width: 100%;
       height: calc(100% - 68px);
       position: fixed;
       top: 68px;
       left:0;
-      display: none;
+      display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
@@ -761,7 +780,7 @@ header .navigation li a:hover {
     header .logo {
        
         font-size: 30px;
-        
+        margin-bottom: 10px;
     }
 
    
@@ -772,13 +791,13 @@ header .navigation li a:hover {
 
     .banner .content h2 {
    
-        font-size: 2.8em;
+        font-size: 2.5em;
       
     }
     
     
     .banner .content p {
-        font-size: 1.5em;
+        font-size: 2em;
               }
     
     .btn {
@@ -855,12 +874,12 @@ header .navigation li a:hover {
    .contact {
     width: 100%;
     text-align: center;
-  
+   
     
 }
   
 .contact .intro {
-   width: 100%;
+    width: 100%;
 
 }
 
@@ -871,6 +890,11 @@ header .navigation li a:hover {
     margin-top: 50px;
 }
     
+.contact .intro span{
+   
+   margin: 20px 0;
+    
+}
 
 .contact .intro a {
    
