@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 
@@ -17,21 +17,19 @@
         <header>
             <a href="#" class="logo"><i class="fas fa-paint-roller"></i></a>
             
-            <div class="menuToggle">
-               
+            <div class="menuToggle" onclick="toggleMenu();">
+           <i class="fas fa-bars"></i>
             </div>
+            
             <ul class="navigation">
                <li><a href="#banner" class="active" onclick="toggleMenu();">HOME</a></li>
                <li><a href="#about" onclick="toggleMenu();">ABOUT</a></li>
                <li><a href="#gallery" onclick="toggleMenu();">GALLERY</a></li>
-               <li><a href="#services"onclick="toggleMenu();" >SERVICES</a></li>
-               
+               <li><a href="#services" onclick="toggleMenu();">SERVICES</a></li>
                <li><a href="#contact" onclick="toggleMenu();">CONTACT</a></li>
             </ul>
             
-            <label id="icon"  onclick="toggleMenu();">
-                <i class="fas fa-bars"></i>
-            </label>
+           
 
         </header>
          <!--header ends-->
@@ -321,13 +319,12 @@
         header.classList.toggle("sticky", window.scrollY > 0);
       });
 
-
       function toggleMenu() {
-          const menuToggle = document.querySelector('.icon');
+          const menuToggle = document.querySelector('.menuToggle');
           const navigation = document.querySelector('.navigation');
           menuToggle.classList.toggle('active');
           navigation.classList.toggle('active');
-  }
-    </script>
+      }
+      </script>
 </body>
 </html>
