@@ -110,7 +110,7 @@ header .navigation li {
        transition: 5s; 
     }
     
-    .toggle {
+    .menuToggle {
         color: white;
         font-size: 30px;
         line-height: 80px;
@@ -119,6 +119,9 @@ header .navigation li {
         cursor: pointer;
         display: none;
     }
+
+    
+
 
 
 /*...................HEADER ENDS...............*/
@@ -408,6 +411,7 @@ text-align: center;
 .services .content2 .box .text p {
     color: #666;
     font-style: italic;
+    text-align: center;
 }
 
 
@@ -448,6 +452,7 @@ text-align: center;
     
     margin-bottom: 10px;
 }
+
 
 .contact .intro a {
    
@@ -724,41 +729,57 @@ margin-top: 50px;
         padding: 20px;
     }
 
+    header .logo {
+       
+       margin-bottom: 10px;
+        
+    }
+
    header 
    header.sticky {
   padding: 10px 20px;
    }
 
+
    header .navigation {
        display: none;
    }
-
    
-    .toggle {
+
+   header .navigation.active{
+    width: 100%;
+    height: calc(100% - 70px);
+    position: fixed;
+    top: 70px;
+    left:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:black;
+  
+   }
+
+
+   .menuToggle {
         display: block;
     }
 
-   header .navigation.active {
-      width: 100%;
-      height: calc(100% - 68px);
-      position: fixed;
-      top: 68px;
-      left:0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      background-color: black;
-   }
 
-   header .navigation li {
-       margin-left: 0;
-       padding: 10px;
-   }
+    .menuToggle.active {
+        display: block;
+    }
+
+    header .navigation li {
+        margin-left: 0;
+        margin: 10px;
+   
+    }
+ 
 
    header .navigation li a {
     font-size: 1.6em;
-   
+    
 }
 
 header .navigation li a:hover {
@@ -768,14 +789,14 @@ header .navigation li a:hover {
 }
 
 
+#check:checked ~ ul {
+    left: 0;
+}
+
+
 /*banner*/
 
-
-           
-/*banner*/
-
-
-  }
+}
 
 @media (max-width: 480px) {
     
