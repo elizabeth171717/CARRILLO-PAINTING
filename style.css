@@ -872,7 +872,10 @@ header .navigation li a:hover {
     margin-bottom: 50px;
     }
     
+    .row .first h2, p{
+  margin-right: 0px;
     
+    }
     
     .row .second  {
        width: 100%;
