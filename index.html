@@ -2,289 +2,254 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-
-    <title>CARRILLO PAINTING</title>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- styles -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
 </head>
 <body>
-    <div class="jumbo">
-
-        <!--header starts-->
-        <header>
-            <a href="#" class="logo"><i class="fas fa-paint-roller"></i></a>
-            
-            <div class="menuToggle" onclick="toggleMenu();">
-           <i class="fas fa-bars"></i>
+    <!-- header -->
+    <header id="home">
+        <!-- navbar-->
+        <nav id="nav">
+            <div class="nav-center">
+                <!-- nav header-->
+                <div class="nav-header">
+                    <div  class="logo">
+                        <p><a href="tel:404-680-7241">404-680-7241</a></p>
+                </div>
+                    <button class="nav-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+                <!-- links -->
+                <div class="links-container">
+                    <ul class="links">
+                        <li>
+                          <a href="#home" class="scroll-link">home</a>
+                        </li>
+                        <li>
+                          <a href="#about" class="scroll-link">about</a>
+                        </li>
+                        <li>
+                          <a href="#services" class="scroll-link">services</a>
+                        </li>
+                        <li>
+                          <a href="#gallery" class="scroll-link">gallery</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="scroll-link">contact</a>
+                          </li>
+                     </ul>
+                      
+                </div>
             </div>
-            
-            <ul class="navigation">
-               <li><a href="#banner" class="active" onclick="toggleMenu();">HOME</a></li>
-               <li><a href="#about" onclick="toggleMenu();">ABOUT</a></li>
-               <li><a href="#gallery" onclick="toggleMenu();">GALLERY</a></li>
-               <li><a href="#services" onclick="toggleMenu();">SERVICES</a></li>
-               <li><a href="#contact" onclick="toggleMenu();">CONTACT</a></li>
-            </ul>
-            
-           
+        </nav>
 
-        </header>
-         <!--header ends-->
-
-
-        <!--banner section starts--> 
-    <section class="banner" id="banner">
-        <div class="content">
-  
-            
-            <h2>CARRILLO PAINTING</h2>
-            <p><a href="tel:404-680-7241">404-680-7241</a></p>
-            <p>We do Interior/Exterior Home Repair</p>
-            <a href="tel:404-680-7241" class="btn">FREE ESTIMATE</a>
+    <!--banner-->
+    <div class="banner">
+        <div class="container">
+            <h1>CARRILLO PAINTING</h1>
+          
+            <p>
+                We do Interior/Exterior PAINTING , Home repair and much more...
+            </p>
+            <a href="tel:404-680-7241" class="scroll-link btn btn-white">
+                free estimate
+            </a>
         </div>
-      </section>
-    <!--banner section ends--> 
+    </div>
+    </header>
 
-
-    <!--about section starts--> 
-
-    <section class="about" id="about">
-            <div class="row">
-            <div class="first">
-                <h2 class="tittleText"><span>A</span>BOUT US</h2>
-
-                <p>CARRILLO PAINTING A FAMILY OWNED COMPANY,
-                     offers you the best service in Town.
-                     PLEASE CALL NATIVIDAD CARRILLO
-                     IF YOU HAVE ANY QUESTION about the services we offer.
-                     <br/> <strong>404-680-7241</strong> </p>
-                    <br/>
-                     <p>
-                    We can help you with all of your home painting needs whether you
-                      need assistance with your residential home or local business. 
-                      Our painting services range in size from staining a fence to painting 
-                      the entire interior and exterior of your home. You can count on providing
-                       home painting to your specific neighborhood.
-                     
-                    We are located in the Atlanta ,Ga area but feel free to contact us
-                    to Learn About The Areas We Serve.
-                    </p>
-                       
-            </div>
-            <div class="second">
-               <div class="imgBx">
-                   <img src="images/15.jpg" width="300px" height="300px">
-               </div>
-            </div>
+    <!--about section-->
+    <section id="about" class="section">
+        <div class="title">
+            <h2>About <span>Us</span></h2>
         </div>
+        <div class="about">
+            <div class="about-text">
+               <p><strong>CARRILLO PAINTING</strong> A FAMILY OWNED COMPANY
+                 can help you with all of your home painting needs whether you
+             need assistance with your residential home or local business. 
+             Our painting services range in size from staining a fence to painting 
+             the entire interior and exterior of your home.
+            
+           We are located in the Atlanta ,Ga area but feel free to contact us
+           to Learn About The Areas We Serve.
+           <br /><br />
+            We also offer Pressure Washing, general Cleaning
+            for your home or vehicle.
+            Do have asbestos in your ceiling? You can count on us to 
+            remove small sections of ceiling drywall with popcorn texture
+             and for any interior or exterior wall repair.
+             </p>
+        </div>       
+            
+        <div class="about-img">
+           <div class="imgBx">
+            <img src="images/about.jpg" width="300px" height="300px">
+           </div>
+   
+        </div> 
+    </div>
     </section>
-    <!--about section ends--> 
+    <!--about section ends-->
 
-
-    <!--...........GALLERY SECTION STARTS....................-->
-     
-    <section  class="gallery" id="gallery">
-        <div class="tittle">
-            <h2 class="tittleText">Our <span>W</span>ork </h2>
-            <p>Here is some of our painting work, Interior,
-                 Exterior, Wood...</p>
+    <!--services section-->
+    <section id="services" class="section">
+        <div class="title">
+            <h2>Other <span>Services</span></h2>
         </div>
-        <div class="content">
+                <div class="content-serv">
+           
             <div class="box">
+
                 <div class="imgBx">
-                    <img src="images/5.jpg" width="150px" height="150px">
+                    <img src="./images/1.jpg" width="200px" height="200px">
                 </div>
-                <div class="text">
-                    <h3>SINGLE ROOM</h3>
-                </div>
-            </div>
- 
-            <div class="box">
-             <div class="imgBx">
-                 <img src="images/7.jpg" width="150px" height="150px">
-             </div>
-             <div class="text">
-                 <h3>HOME</h3>
-             </div>
-         </div>
- 
-         <div class="box">
-             <div class="imgBx">
-                 <img src="images/9.jpg" width="150px" height="150px">
-             </div>
-             <div class="text">
-                 <h3>EXTERIOR</h3>
-             </div>
-         </div>
- 
-         <div class="box">
-             <div class="imgBx">
-                 <img src="images/18.jpg" width="150px" height="150px">
-             </div>
-             <div class="text">
-                 <h3>FURNITURE</h3>
-             </div>
-         </div>
- 
-         <div class="box">
-          <div class="imgBx">
-              <img src="images/12.jpg" width="150px" height="150px">
-          </div>
-          <div class="text">
-              <h3>INTERIOR</h3>
-          </div>
-      </div>
- 
-      <div class="box">
-          <div class="imgBx">
-              <img src="images/11.jpg" width="150px" height="150px">
-          </div>
-          <div class="text">
-              <h3>WOOD</h3>
-          </div>
-      </div>
- 
-      
-        </div>
-     </section>
- 
-
-
-    <!--...........GALLERY SECTION ENDS....................-->
-    
-     <!--.........SERVICES SECTION STARTS........-->
-
-     <section class="services" id="services">
-        <div class="tittle">
-            <h2 class="tittleText">More <span>S</span>ervices</h2>
-            <h3>Contact us for more than just painting details around the house...</h3>
-        </div>
-        <div class="content">
-            <div class="box">
-                <div class="imgBx">
-                    <img src="images/21.jpg" width="200px" height="200px">
-                </div>
+                
                 <div class="text">
                     <h3>Pressure Washing</h3>
                 </div>
+                
             </div>
 
             <div class="box">
+
                 <div class="imgBx">
-                    <img src="images/23.jpg" width="200px" height="200px">
+                    <img src="./images/2.jpg" width="200px" height="200px">
                 </div>
+               
                 <div class="text">
                     <h3>Gutter Cleaning</h3>
                 </div>
             </div>
 
             <div class="box">
+
                 <div class="imgBx">
-                    <img src="images/3.jpg" width="200px" height="200px">
+                    <img src="./images/3.jpg" width="200px" height="200px">
                 </div>
+                
                 <div class="text">
-                    <h3>Removing ceiling texture</h3>
+                    <h3>Ceiling Texture Repair  </h3>
                 </div>
-            </div>
 
-
-            <div class="box">
-                <div class="imgBx">
-                    <img src="images/22.jpg" width="200px" height="200px">
-                </div>
-                <div class="text">
-                    <h3>Wall repair</h3>
-                </div>
-            </div>
-
-
-        </div>
-  
-
-
-    
-        
-        <div class="content2">
-            <div class="tittle white">
-                <h2>We will arrive on time, keep you informed,
-                     deliver what we promise and guarantee our work. </h2>
                 
             </div>
 
-            <div class="box">
-                <div class="imgBx">
-                    <img src="images/4.jpg" width="400px" height="400px">
-                </div>
-                <div class="text">
-                    <p>We offer a variety of interior and exterior
-                        of home painting, which includes fencing,
-                        your home's deck and furniture.
-                        Regardless of the room inside or
-                        outside syour home,
-                        my team works with you to determine the 
-                        best plan for you.
-                        </p>
-                        <h3>Painting</h3>
-                </div>
-            </div>
 
             <div class="box">
-                <div class="imgBx">
-                    <img src="images/21.jpg" width="400px" height="400px">
-                </div>
-                <div class="text">
-                    <p>We offer Pressure
-                         Washing General Cleaning for your Home or Vehicle. 
-                         Let us make your home and car look as good on the outside 
-                          as it is on the inside . We will remove some 
-                          nasty stuff like mold, moss, algae, oil, grease
-                         
 
-                        </p>
-                        <h3>Pressure Washings</h3>
+                <div class="imgBx">
+                    <img src="./images/4.jpg" width="200px" height="200px">
                 </div>
+               
+                <div class="text">
+                    <h3>Wall repair</h3>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!--services section  ends-->
+
+    
+    <!--services section-->
+    <section id="gallery" class="section">
+        <div class="title">
+            <h2>Our<span>Gallery</span></h2>
+        </div>
+        <div class="photo-gallery">
+           
+            <div class="box">
+            <div class="pic-place">
+                <img src="./images/exterior.jpg" width="150px" height="150px" >
+            </div>
+            <div class="text">
+                <h3>EXTERIOR</h3>
+            </div>
             </div>
 
 
             <div class="box">
-                <div class="imgBx">
-                    <img src="images/24.jpg" width="400px" height="400px">
-                </div>
-                <div class="text">
-                    <p>Do have asbestos in your ceiling?
-                        You can count on us to remove
-                        small sections of ceiling drywall with popcorn
-                        texture and for any  interior or
-                        exterior  wall repair.
-                        </p>
-                        <h3>Ceiling and Wall Repair</h3>
-                </div>
+            <div class="pic-place">
+                <img src="./images/furniture.jpg"  width="150px" height="150px">
+            </div>
+            <div class="text">
+                <h3>FURNITURE</h3>
+            </div>
             </div>
 
+
+            <div class="box">
+            <div class="pic-place">
+                <img src="./images/home.jpg"  width="150px" height="150px">
+            </div>
+            <div class="text">
+                <h3>HOME</h3>
+            </div>
+            </div>
+
+
+            <div class="box">
+            <div class="pic-place">
+                <img src="./images/interior.jpg"  width="150px" height="150px">
+            </div>
+            <div class="text">
+                <h3>INTERIOR</h3>
+            </div>
+            </div>
+
+
+            <div class="box">
+            <div class="pic-place">
+                <img src="./images/singleroom.jpg"  width="150px" height="150px">
+            </div>
+            <div class="text">
+                <h3>SINGLE ROOM</h3>
+            </div>
+            </div>
+
+
+            <div class="box">
+            <div class="pic-place">
+                <img src="./images/wood.jpg"  width="150px" height="150px">
+            </div>
+            <div class="text">
+                <h3>WOOD</h3>
+            </div>
+            </div>
 
 
         </div>
     </section>
+    <!--services section  ends-->
 
 
-     <!--............SERVICES SECTION ENDS..................................-->
-
-
-     <!--CONTACT SECTION STARTS-->
-
-
-     <section class="contact" id="contact">
+   <!--CONTACT SECTION STARTS-->
+   <section id="contact" class="section">
+     
+    <div class="title">
+        <h2>Contact<span>Us</span></h2>
+    </div>
+    <div class="contact-info">
         <div class="intro">
-            <h2 class="tittleText"><span>C</span>ontact Us </h2>
+           
             <p>Call us today to get a free ESTIMATE and
                 to learn more about the areas we serve.
             </p>
             <p>Like and follow us on Social Media</p>
-            <h3>Ready to make a change? call:</h3>
-            <p><span>NATIVIDAD CARRILLO</span></p>
+            <h3>CALL OR TEXT</h3>
+            <h5>NATIVIDAD CARRILLO</h5>
 
             <p><a href="tel:404-680-7241">404-680-7241</a></p>
             <p><a href="tel:404-536-8869">404-536-8868</a></p>
@@ -299,32 +264,29 @@
         <a href="tel:404-680-7241"><i class="fas fa-phone"></i></a>
     </div>
         </div>
-        </section>
-
-       
-
-     <!--CONTACT SECTION ENDS-->
-     
-
-     <!--COPYRIGHTS-->
-     <div class="copyRightText">
-        <p>Copyright 2020 <a href="#">777etr</a>. All rights Reserved</p> 
-     </div>
 
     </div>
+        </section>
 
-    <script type="text/javascript">
-      window.addEventListener('scroll', function(){
-        const header = document.querySelector('header');
-        header.classList.toggle("sticky", window.scrollY > 0);
-      });
+    
+    <!--footer-->
+    <footer class="section">
+        <p>
+            copyright &copy; Elizabeth Teresa
+         <span id="date"></span>
+            .All rights reserved
+        </p>
+     </footer>
+     <!--footer ends-->
 
-      function toggleMenu() {
-          const menuToggle = document.querySelector('.menuToggle');
-          const navigation = document.querySelector('.navigation');
-          menuToggle.classList.toggle('active');
-          navigation.classList.toggle('active');
-      }
-      </script>
+     
+     <!-- back to top-->
+     <a href="#home" class="scroll-link top-link">
+         <i class="fas fa-arrow-up"></i>
+     </a>
+     
+         <!-- javascript-->
+         <script src="app.js"></script>
+
 </body>
 </html>
