@@ -429,6 +429,7 @@ footer p {
   width: 50%;
   height: 100%;
   object-fit: cover;
+  border-left: 10px solid var(--clr-grey-1);
 }
 
 @media screen and (max-width: 800px) {
